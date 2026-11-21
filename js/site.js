@@ -3,7 +3,7 @@
   'use strict';
 
   // ---- Edit these two links when the real addresses are known ----
-  var APP_URL = '#open-app';        // the web app, e.g. https://app.stipendtracker.com
+  var APP_URL = 'https://app.stipendtracker.com'; // the web app
   var MAC_URL = 'download.html#mac'; // the Mac download section
   var MAC_DOWNLOAD_URL = '#mac-download'; // the Mac app file (.zip), e.g. a GitHub release link
   // -----------------------------------------------------------------
