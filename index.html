@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StipendTracker: make your stipend last the whole month</title>
+  <meta name="description" content="A simple, private budget tracker for stipend and fellowship recipients. Free, no account, works offline.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="StipendTracker">
+  <meta property="og:description" content="Make your stipend last the whole month. Free, private, works offline.">
+  <meta property="og:image" content="assets/logo-full.png">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body data-page="home">
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="StipendTracker home"><img src="assets/logo-full.png" alt="StipendTracker" width="900" height="217"></a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a class="link" href="index.html" aria-current="page" data-i="nav.home">Home</a>
+      <a class="link" href="how-to.html" data-i="nav.how">How to use it</a>
+      <a class="link" href="download.html" data-i="nav.download">Download</a>
+      <a class="link" href="faq.html" data-i="nav.faq">FAQ</a>
+      <a class="link" href="contact.html" data-i="nav.contact">Contact</a>
+      <a class="link" href="about.html" data-i="nav.about">About us</a>
+      <div class="lang" role="group" aria-label="Language"><button data-lang="en" class="on">EN</button><button data-lang="es">ES</button></div>
+      <a class="btn primary small" data-app-link href="#" data-i="nav.open">Open web app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow"><i></i><span data-i="hero.pill">Free · No account · Works offline</span></span>
+        <h1 data-i="hero.h1">Make your stipend last the <span class="gb">whole month</span>.</h1>
+        <p class="lead" data-i="hero.lead">StipendTracker is a simple budget tracker for stipend and fellowship recipients. See at a glance whether you are on pace, spend freely from your own savings buffer, and keep everything private on your own device.</p>
+        <div class="cta-row">
+          <a class="btn primary" data-app-link href="#" data-i="hero.open">Open the web app</a>
+          <a class="btn ghost" data-mac-link href="download.html#mac" data-i="hero.mac">Download for Mac</a>
+        </div>
+        <p class="fine"><span data-i="hero.fine">Works on Windows, iPhone and Android too. Install it right from the web app.</span> <a href="download.html#install" data-i="hero.install">How to install →</a></p>
+      </div>
+      <div class="visual">
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span>stipendtracker</span></div>
+          <img src="assets/shot-home-desktop.webp" alt="StipendTracker home screen showing this month's budget by category" width="2040" height="1290">
+        </div>
+        <div class="phone"><img src="assets/shot-home-phone.webp" alt="StipendTracker on a phone" width="780" height="1600"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i></i><span data-i="feat.pill">What it does</span></span>
+        <h2 data-i="feat.h2">Everything you need, <span class="gt">nothing you don't</span></h2>
+        <p data-i="feat.sub">Built for people living on a fixed monthly amount, often in a new country, who want to know if they are okay without a spreadsheet.</p>
+      </div>
+      <div class="cards five">
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg></div>
+          <h3 data-i="f1.h">Pace tracking</h3>
+          <p data-i="f1.p">Each category shows where you should be by today, not just what is left. Green, yellow and red tell you if you are on pace, a little high or way over, while there is still time to adjust.</p>
+        </article>
+        <article class="card reveal d1">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.4 4.1 1.2 6L12 16.6 6.6 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></div>
+          <h3 data-i="f2.h">Baller Budget</h3>
+          <p data-i="f2.p">Underspend in a month and the surplus rolls into a savings buffer you can spend guilt-free, plus any funds you add yourself.</p>
+        </article>
+        <article class="card reveal d2">
+          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v8l5.6 5.6"/></svg></div>
+          <h3 data-i="f3.h">History at a glance</h3>
+          <p data-i="f3.p">Open any past month to see a sleek ring chart of where your money went. Categories that ran over are flagged in yellow and red.</p>
+        </article>
+        <article class="card reveal d3">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M12 11v6M9.5 14.5L12 17l2.5-2.5"/></svg></div>
+          <h3 data-i="f4.h">Bank PDF import</h3>
+          <p data-i="f4.p">No need to enter every little transaction one at a time. Drop in your Santander movements PDF, check the purchases, pick categories and import them in seconds. It remembers your stores and skips duplicates.</p>
+        </article>
+        <article class="card reveal d4">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 8h13l-3-3"/><path d="M20 16H7l3 3"/></svg></div>
+          <h3 data-i="f5.h">Two currencies, one budget</h3>
+          <p data-i="f5.p">Paid in dollars but budgeting in euros? Tap € or $ next to the amount and StipendTracker converts it at that day's exchange rate, so every purchase counts toward your budget.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap showcase">
+      <div class="reveal">
+        <span class="eyebrow"><i></i><span data-i="show.pill">See the month clearly</span></span>
+        <h2 data-i="show.h2">A ring chart that shows <span class="gt">where it all went</span></h2>
+        <p data-i="show.p">Every finished month keeps its own budgets and its own story. Click a month in your history and see the split at a glance.</p>
+        <ul class="ticks">
+          <li data-i="show.t1">Over-budget categories turn yellow or red, with a label</li>
+          <li data-i="show.t2">Each month remembers the budgets it had</li>
+          <li data-i="show.t3">Per-category logs you can look back through</li>
+        </ul>
+      </div>
+      <div class="show-visual reveal d1">
+        <div class="blob"></div>
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span>stipendtracker</span></div>
+          <img src="assets/shot-ring-desktop.webp" alt="Ring chart of one month's spending by category" width="2040" height="1290" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2 data-i="priv.h2">Your money. Your device.</h2>
+          <p data-i="priv.p">There are no accounts, no servers and no tracking. Everything you enter stays on your own device, and you can save a backup file whenever you like.</p>
+        </div>
+        <div class="pills"><span data-i="priv.1">No sign-up</span><span data-i="priv.2">Works offline</span><span data-i="priv.3">Free</span><span data-i="priv.4">Backup anytime</span></div>
+        <div class="blob b1"></div><div class="blob b2"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="wrap reveal">
+      <h2 data-i="cta.h2">Ready to see where your stipend <span class="gt">really</span> goes?</h2>
+      <p data-i="cta.p">Open the web app, set your monthly budgets and start tracking in about two minutes.</p>
+      <div class="cta-row">
+        <a class="btn primary" data-app-link href="#" data-i="hero.open">Open the web app</a>
+        <a class="btn ghost" href="how-to.html" data-i="cta.how">See how it works</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div><img src="assets/logo-full.png" alt="StipendTracker" width="900" height="217"></div>
+      <div class="cols">
+        <div><h4 data-i="foot.explore">Explore</h4>
+          <a href="how-to.html" data-i="nav.how">How to use it</a><a href="faq.html" data-i="nav.faq">FAQ</a><a href="about.html" data-i="nav.about">About us</a></div>
+        <div><h4 data-i="foot.get">Get the app</h4>
+          <a data-app-link href="#" data-i="foot.web">Web app</a><a href="download.html#mac" data-i="foot.mac">Mac app</a><a href="download.html#install" data-i="foot.win">Windows and mobile</a></div>
+        <div><h4 data-i="nav.contact">Contact</h4>
+          <a href="mailto:stipendtracker@gmail.com">stipendtracker@gmail.com</a></div>
+      </div>
+    </div>
+    <p class="fine" data-i="foot.fine">Made by JJ Chehab. StipendTracker is an independent project and is not affiliated with any bank. Bank names, like Santander, are mentioned only to say which statements the import understands.</p>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
