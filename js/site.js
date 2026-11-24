@@ -2,10 +2,8 @@
 (function () {
   'use strict';
 
-  // ---- Edit these two links when the real addresses are known ----
+  // ---- Where the "Open the web app" buttons go ----
   var APP_URL = 'https://app.stipendtracker.com'; // the web app
-  var MAC_URL = 'download.html#mac'; // the Mac download section
-  var MAC_DOWNLOAD_URL = 'https://github.com/jjchehab/stipendtracker-site/releases/download/v1.0/StipendTracker.zip'; // the Mac app file (direct download)
   // -----------------------------------------------------------------
 
   var T = {
@@ -16,9 +14,8 @@
       'hero.pill': 'Free · No account · Works offline',
       'hero.h1': 'Make your stipend last the <span class="gb">whole month</span>.',
       'hero.lead': 'StipendTracker is a simple budget tracker for stipend and fellowship recipients. See at a glance whether you are on pace, spend freely from your own savings buffer, and keep everything private on your own device.',
-      'hero.open': 'Open the web app', 'hero.mac': 'Download for Mac',
-      'hero.fine': 'Works on Windows, iPhone and Android too. Install it right from the web app.',
-      'hero.install': 'How to install →',
+      'hero.open': 'Open the web app', 'hero.how': 'How to install',
+      'hero.fine': 'Works on Mac, Windows, iPhone and Android. Install it right from the web app.',
 
       'feat.pill': 'What it does',
       'feat.h2': 'Everything you need, <span class="gt">nothing you don\'t</span>',
@@ -50,8 +47,8 @@
       'cta.p': 'Open the web app, set your monthly budgets and start tracking in about two minutes.',
       'cta.how': 'See how it works',
 
-      'foot.explore': 'Explore', 'foot.get': 'Get the app', 'foot.web': 'Web app', 'foot.mac': 'Mac app',
-      'foot.win': 'Windows and mobile', 'foot.email': 'Email us',
+      'foot.explore': 'Explore', 'foot.get': 'Get the app', 'foot.web': 'Web app',
+      'foot.win': 'Install on your device', 'foot.email': 'Email us',
       'foot.fine': 'Made by JJ Chehab. StipendTracker is an independent project and is not affiliated with any bank. Bank names, like Santander, are mentioned only to say which statements the import understands.'
     },
     es: {
@@ -61,9 +58,8 @@
       'hero.pill': 'Gratis · Sin cuenta · Funciona sin conexión',
       'hero.h1': 'Haz que tu beca dure <span class="gb">todo el mes</span>.',
       'hero.lead': 'StipendTracker es un gestor de presupuesto sencillo para quienes viven de una beca. Mira de un vistazo si vas bien de ritmo, gasta con tranquilidad de tu colchón de ahorro y mantén todo en privado, en tu propio dispositivo.',
-      'hero.open': 'Abrir la app web', 'hero.mac': 'Descargar para Mac',
-      'hero.fine': 'También funciona en Windows, iPhone y Android. Instálala desde la propia app web.',
-      'hero.install': 'Cómo instalarla →',
+      'hero.open': 'Abrir la app web', 'hero.how': 'Cómo instalarla',
+      'hero.fine': 'Funciona en Mac, Windows, iPhone y Android. Instálala desde la propia app web.',
 
       'feat.pill': 'Qué hace',
       'feat.h2': 'Todo lo que necesitas, <span class="gt">y nada más</span>',
@@ -95,8 +91,8 @@
       'cta.p': 'Abre la app web, define tus presupuestos mensuales y empieza a registrar en unos dos minutos.',
       'cta.how': 'Mira cómo funciona',
 
-      'foot.explore': 'Explorar', 'foot.get': 'Obtener la app', 'foot.web': 'App web', 'foot.mac': 'App para Mac',
-      'foot.win': 'Windows y móvil', 'foot.email': 'Escríbenos',
+      'foot.explore': 'Explorar', 'foot.get': 'Obtener la app', 'foot.web': 'App web',
+      'foot.win': 'Instalar en tu dispositivo', 'foot.email': 'Escríbenos',
       'foot.fine': 'Creado por JJ Chehab. StipendTracker es un proyecto independiente y no está afiliado a ningún banco. Los nombres de bancos, como Santander, se mencionan solo para indicar qué extractos entiende la importación.'
     }
   };
@@ -134,9 +130,6 @@
   });
 
   document.querySelectorAll('[data-app-link]').forEach(function (a) { a.setAttribute('href', APP_URL); });
-  document.querySelectorAll('[data-mac-link]').forEach(function (a) { a.setAttribute('href', MAC_URL); });
-
-  document.querySelectorAll('[data-mac-dl]').forEach(function (a) { a.setAttribute('href', MAC_DOWNLOAD_URL); });
 
   // short looping clips: play only while visible, and never autoplay for people who prefer less motion
   var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
