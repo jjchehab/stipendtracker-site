@@ -386,3 +386,18 @@ details .answer a { color: var(--blue); font-weight: 700; }
   .cards.five { grid-template-columns: 1fr; }
   .cards.five .card:last-child { grid-column: auto; }
 }
+
+/* Trends showcase (copy on the right, picture on the left) */
+.showcase.flip { grid-template-columns: 1.15fr 1fr; }
+.showcase.flip .show-visual { order: -1; }
+.show-visual .browser video { width: 100%; height: auto; display: block; aspect-ratio: 1100 / 688; background: #1E2FB3; object-fit: cover; }
+@media (max-width: 900px) { .showcase.flip { grid-template-columns: 1fr; } .showcase.flip .show-visual { order: 0; } }
+main { overflow-x: clip; }
+
+/* Streaks + check-up pair */
+.duo { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: start; }
+.duo-card { background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 22px; box-shadow: 0 18px 40px -26px rgba(14,21,97,.35); }
+.duo-card img { width: 100%; height: auto; display: block; border-radius: 18px; margin-bottom: 20px; }
+.duo-card h3 { font-size: 22px; font-weight: 800; margin: 0 0 8px; }
+.duo-card p { color: var(--muted); margin: 0; }
+@media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
